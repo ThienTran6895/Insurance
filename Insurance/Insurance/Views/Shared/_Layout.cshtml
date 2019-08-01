@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THÔNG TIN HỢP ĐỒNG</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <script type="text/javascript" charset="utf-8" src="~/Scripts/Plugins/datatables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="~/Scripts/Plugins/datatables/jquery.dataTables.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/Scripts/Plugins/datatables/jquery.dataTables.css" />
+    <link rel="stylesheet" type="text/css" href="~/Scripts/Plugins/datatables/jquery.dataTables.min.css" />
+</head>
+<body>   
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>            
+            @*<p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>*@
+        </footer>
+    </div>
+
+    
+    @RenderSection("scripts", required: false)
+</body>
+</html>

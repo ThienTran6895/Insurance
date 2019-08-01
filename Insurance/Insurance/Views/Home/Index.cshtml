@@ -1,0 +1,273 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="body">
+    <div class="dtr-title">
+        <h3 class="box-title" style="text-align:center;">THÔNG TIN HỢP ĐỒNG</h3>
+    </div>
+    <div class="form-group">
+        <div class="col-md-12">
+            <div class="form-group col-md-6">
+                <h5>Bên mua bảo hiểm: </h5>
+            </div>
+            <div class="form-group col-md-2">
+                <h5>Tuổi: </h5>
+            </div>
+            <div class="form-group col-md-2">
+                <h5>Giới tính: </h5>
+            </div>
+            <div class="form-group col-md-2">
+                <h5>Đơn vị tính: Đồng</h5>
+            </div>
+        </div>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="#infor" aria-controls="infor" role="tab" data-toggle="tab">Information</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="profile">
+                <table id="grid_profile" class="table table-striped table-bordered display" cellspacing="0" style="width:100%">
+                    <thead class="text-black" style="background: #CCCCCC;">
+                        <tr>
+                            <th>Người được bảo hiểm</th>
+                            <th>Ngày sinh</th>
+                            <th>Tuổi/Giới tính</th>
+                            <th>Nhóm nghề nghiệp</th>
+                            <th>Sản phẩm bảo hiểm</th>
+                            <th>Số tiền bảo hiểm</th>
+                            <th>Thời hạn bảo hiểm (Năm)</th>
+                            <th>Thời hạn đóng phí dự kiến(*) (Năm)</th>
+                            <th>Phí bảo hiểm năm</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <input type="text" id="1" />
+                            </th>
+                            <th id="2">
+                                <input type="date" />
+                            </th>
+                            <th id="3">
+                                <input type="text" />
+                            </th>
+                            <th id="4">
+                                <input type="text" />
+                            </th>
+                            <th id="5">
+                                <input type="text" />
+                            </th>
+                            <th id="6">
+                                <input type="text" />
+                            </th>
+                            <th id="7">
+                                <input type="text" />
+                            </th>
+                            <th id="8">
+                                <input type="text" />
+                            </th>
+                            <th id="9">
+                                <input type="text" />
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="col-md-12">
+                    <div class="form-group col-md-2" style="margin-left:440px;">
+                        <h5>Quý</h5>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <h5>Nửa năm</h5>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <h5>Năm</h5>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group col-md-4">
+                        <h5>Phí bảo hiểm cơ bản(1)</h5>
+                        <h5>Phí bảo hiểm của (các) sản phẩm bổ sung (2)</h5>
+                        <h5>Phí bảo hiểm định kì (3) = (1) + (2)</h5>
+                        <h5>Phí bảo hiểm đóng thêm dự kiến Năm hợp đồng 1 (4)</h5>
+                        <h5>Phí bảo hiểm định kì dự kiến = (3) + (4)</h5>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input type="text" />
+                        <input type="text" />
+                        <input type="text" />
+                        <input type="text" />
+                        <input type="text" />
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input type="text" />
+                        <input type="text" />
+                        <input type="text" />
+                        <input type="text" />
+                        <input type="text" />
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input type="text" />
+                        <input type="text" />
+                        <input type="text" />
+                        <input type="text" />
+                        <input type="text" />
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="infor">
+                <table id="grid_infor" class="table table-striped table-bordered display dt-head-center" cellspacing="0" style="width:100%" align="center">
+                    <thead class="text-black" style="background: #CCCCCC; width:100%;">
+                        <tr>
+                            <th>Sản phẩm bảo hiểm</th>
+                            <th>Sự kiện bảo hiểm</th>
+                            <th>Giá trị chi trả (Đồng)</th>
+                            <th>Ghi chú</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="text-align:center;">
+                            <th rowspan="3" align="center">New URL</th>
+                            <th>Tử vong</th>
+                            <th>
+                                Nếu chọn Gia tăng tiết kiệm: "Giá trị lớn hơn giữa <STBH> đồng và Giá trị tài khoản" Nếu chọn Gia tăng bảo vệ: Trước khi Người được bảo hiểm đạt 70 tuổi: "<STBH> đồng + Giá trị tài khoản" Kể từ khi Người được bảo hiểm đạt 70 tuổi: "Giá trị lớn hơn giữa <STBH> đồng và Giá trị tài khoản"
+                            </th>
+                            <th>
+                                Nếu chọn Gia tăng bảo vệ: Kể từ khi Người được bảo hiểm đạt 70 tuổi, Hợp đồng sẽ tự động chuyển đối thành Quyền lợi Gia tăng tiết kiệm.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Bị thương tật toàn bộ vĩnh viện</th>
+                            <th>
+                                Nếu chọn Gia tăng tiết kiệm: "Giá trị lớn hơn giữa <STBH> đồng và Giá trị tài khoản" Nếu chọn Gia tăng bảo vệ: "<STBH> đồng + Giá trị tài khoản"
+                            </th>
+                            <th>
+                                - Nếu Người được bảo hiểm bị Thương tật toàn bộ vĩnh viễn trong thời gian hợp đồng bảo hiểm có hiệu lực và trước khi đạt 66 tuổi.
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Ung thư giai đoạn cuối</th>
+                            <th>
+                                Tạm ứng không tính lãi lên đến 50% Giá trị tài khoản, nhưng không vượt quá 500 triệu đồng.
+                            </th>
+                            <th>
+                                - Trong thời gian tạm ứng, 100% Giá trị tài khoản bao gồm phần tạm ứng vẫn sẽ được tích lũy lãi. - Khoản tạm ứng sẽ được khấu trừ từ Giá trị tài khoản nếu Người được bảo hiểm còn sống sau 12 tháng, hoặc Quyền lợi tử vong/Thương tật toàn bộ vĩnh viễn nếu Người được bảo hiểm tử vong/ bị thương tật toàn bộ vĩnh viễn trong vòng 12 tháng kể từ ngày nhận tạm ứng.
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <p>Ghi chú:</p>
+            <p>
+                (*) Thời hạn đóng phí bằng Thời hạn bảo hiểm. Tuy nhiên, Bên mua bảo hiểm có thể đóng phí linh hoạt từ Năm hợp đồng thứ 4, tùy thuộc vào nhu cầu tiết kiệm và bảo vệ của mình. Việc giảm hoặc tạm ngưng đóng phí có thể dẫn đến hợp đồng mất hiệu lực do Giá trị tài khoản không đủ khấu trừ Phí bảo hiểm rủi ro hàng tháng.
+            </p>
+        </footer>
+        <input id="btn_save" type="button" value="Lưu" style="float:right;" />
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        
+        $('#btn_save').on('click', function () {
+            var customer = {
+                Name: "" + $('#1').val() + "",
+                Dob: "" + $('#2').val() + "",
+                Age: "" + $('#3').val() + "",
+                Job: "" + $('#4').val() + "",
+                Money: "" + $('#5').val() + "",
+                Duration: "" + $('#6').val() + "",
+                PayDuaration: "" + $('#7').val() + "",
+                TaxPerYear: "" + $('#8').val() + "",
+                BasicIns_quy: "" + $('#9').val() + "",
+                BasicIns_nuanam: "" + $('#10').val() + "",
+                BasicIns_nam: "" + $('#11').val() + "",
+                AddItemIns_quy: "" + $('#12').val() + "",
+                AddItemIns_nuanam: "" + $('#13').val() + "",
+                AddItemIns_nam: "" + $('#14').val() + "",
+                PayAdd_quy: "" + $('#15').val() + "",
+                PayAdd_nuanam: "" + $('#16').val() + "",
+                PayAdd_nam: "" + $('#17').val() + "",
+
+            };
+            console.log(customer);
+
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                data: customer,
+                url: '@Url.Action("AddCustomer", "Home")',
+            });
+        });
+        
+    });
+
+</script>
+@*<script type="text/javascript">
+        $(document).ready(function () {
+            var table = $("#grid").DataTable({
+                        processing: true,
+                        searching: false,
+                        ordering: false,
+                        pagingType: "full_numbers",
+                        lengthChange: false,            //Show .... entires (rows per page)
+                        ajax: {
+                            url: "@Html.Raw(Url.Action("GetListCallNotSuccess", "Call"))",
+                            type: "POST",
+                            dataType: "json",
+                            dataSrc: "Data",
+                            data: additionalData,
+                        },
+                        columns: [
+
+                            {
+                                data: 'MobilePhone',
+                                render: function (data, type, action) {
+
+                                    return "<span onclick='showDetail(\"" + action.CustomerID + "\",\"" + action.MobilePhone + "\")' style=\"cursor:pointer;display:block\">" + action.MobilePhone + "</span>";
+                                },
+                                className: "dt-body-center",
+                            },
+                            { data: 'Name' },
+                            { data: 'NumCall', className: "dt-body-center" },
+                            { data: 'CallBy' },
+                            {
+                                data: 'UpdateDate',
+                                render: function (data, type, row) {
+                                    if (type === "sort" || type === "type") {
+                                        return data;
+                                    }
+                                    return moment(data).format("DD-MM-YYYY HH:mm");
+                                }
+                            }
+                        ],
+                        language: {                                                         //Vietsub
+                            paginate: {                                                     //Vietsub page number
+                                first: "Đầu",
+                                previous: "Trước",
+                                next: "Sau",
+                                last: "Cuối",
+                            },
+                            info: "Hiển thị _START_ - _END_ trong _TOTAL_ dòng"             //Vietsub display page in total
+                        },
+
+                    });
+        });
+    </script>*@
+<style type="text/css">
+    input {
+        margin: inherit;
+    }
+
+    h5 {
+        margin: 15px 0 23px 0;
+    }
+
+    thead tr:first-child th {
+        text-align: center;
+        width: 150px;
+    }
+</style>
