@@ -16,12 +16,12 @@ namespace Insurance.Models
 
         public Guid CustomerID { get; set; }
         public string Name { get; set; }
-        public string Dob { get; set; } 
+        public DateTime Dob { get; set; } 
         public int Age { get; set; }
         public string Job { get; set; }
-        public int Money { get; set; }
+        public int PayMoney { get; set; }
         public int Duration { get; set; }
-        public string PayDuration { get; set; }
+        public int PayDuration { get; set; }
         public int TaxPerYear { get; set; }
         public Guid ProductID { get; set; }
         public string BasicIns_quy { get; set; }
